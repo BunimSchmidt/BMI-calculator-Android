@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_border"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+    tools:context="health.calculator.bmicalculator.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00F000"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="מחשבון BMI"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="#00F000">
+
+            <RadioButton
+                android:id="@+id/maleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#00F000"
+                android:text="זכר"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/femaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#00F000"
+                android:text="נקבה"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="גיל"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/WeightEditText"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="משקל"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/heighTtextView"
+            android:layout_width="213dp"
+            android:layout_height="50dp"
+            android:gravity="bottom|center_horizontal"
+            android:hint="גובה"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <SeekBar
+            android:id="@+id/heightSeekBar"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:max="80"
+            android:progressTint="#00F000"
+            android:thumbTint="#00F000" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="211dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00F000"
+            android:text="חשב"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:text="תוצאות"
+            android:textColor="#000000"
+
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/outputTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_border"
+            android:gravity="center"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textColor="#000000"
+
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
